@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Face Api JS Utils</title>
-  <script defer src="/node_modules/face-api.js/dist/face-api.min.js"></script>
-  <script defer src=/app.js></script>
+  <script defer src="./node_modules/face-api.js/dist/face-api.min.js"></script>
+  <script defer src=./app.js></script>
   <style>
     body {
       margin: 0;
@@ -21,15 +21,23 @@
     canvas {
       position: absolute;
     }
+
+    img {
+      width: inherit;
+    }
   </style>
 </head>
 <body>
   <div>
-    <input type="file" name="image" id="imageUpload">
+    <input type="file" name="image" id="imageUpload" accept="image/*">
     <div id="imageDesc"></div>
+    <div id="imageDisplay" style="width: 400px;"></div>
   </div>
   <div>
-    <video id="myVideo" src="/video/mov_bbb.mp4"></video>
+    <video width="400" id="myVideo" muted autoplay>
+      <source src="./video/video-1600073536.mp4" type="video/mp4">
+      Your browser does not support HTML video.
+    </video>
     <div id="videoDesc"></div>
   </div>
 </body>
