@@ -1,0 +1,22 @@
+{
+  "name": "face-api-js-utils",
+  "version": "1.0.0",
+  "description": "face-api.js utils",
+  "main": "app.js",
+  "dependencies": {
+    "face-api.js": "^0.22.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "face-api.js",
+    "Face",
+    "Detection",
+    "images",
+    "videos"
+  ],
+  "author": "Davis Chang",
+  "license": "ISC"
+}
