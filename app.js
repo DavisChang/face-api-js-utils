@@ -33,7 +33,7 @@ function start() {
 const videoEle = document.getElementById('myVideo')
 const videoDescEle = document.getElementById('videoDesc')
 
-videoEle.addEventListener('play', () => {
+videoEle.addEventListener('play', async () => {
   console.log('== play ==');
   var detecting = setInterval(async () => {
     const detections = await faceapi.detectAllFaces(
@@ -60,4 +60,5 @@ Promise.all([
 
 async function videoStart() {
   console.log('== videoStart ==', videoEle)
+  videoDescEle.append(' == Video Start == ')
 }
